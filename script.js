@@ -25,3 +25,4 @@ document.addEventListener("DOMContentLoaded", function () {
             .catch(error => console.error("Error loading the experience section:", error));
     });
 });
+
