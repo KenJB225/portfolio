@@ -56,12 +56,14 @@ nav {
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
+/* Hero Section */
 .hero {
     text-align: center;
     margin: 30px 0;
     font-size: 24px;
     font-weight: bold;
 }
+/* About Section */
 .about {
     display: flex;
     justify-content: space-between;
@@ -80,6 +82,8 @@ nav {
 .profile-pic {
     width: 400px;
     height: 400px;
+    width: 300px;
+    height: 300px;
     border-radius: 50%;
     overflow: hidden;
     border: 3px solid black;
@@ -97,7 +101,6 @@ nav {
     padding: 50px 20px;
     border-radius: 10px;
 }
-
 
 .tech-stack {
     text-align: center;
