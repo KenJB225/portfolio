@@ -169,7 +169,7 @@ html, body {
   flex-direction: column;
   align-items: center;
   background: transparent;
-  color: rgb(255, 255, 255);
+  color: white;
   border: 2px solid #ffffff;
   border-radius: 15px;
   padding: 50px 20px;
