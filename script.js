@@ -6,9 +6,51 @@ const hamburger = document.querySelector('.hamburger');
     hamburger.classList.toggle('open');
   });
 
+  anime({
+    targets: '.profile-pic',
+    opacity: [0, 1],
+    scale: [0.8, 1],
+    easing: 'easeOutQuad',
+    duration: 1250
+  });
 
+  anime.timeline({ loop: false })
+  .add({
+    targets: 'h1', 
+    opacity: [0, 1],
+    translateY: [0, 5],
+    easing: 'easeOutExpo',
+    duration: 1000
+  })
+  
+  .add({
+    targets: 'h2', 
+    opacity: [0, 1],
+    translateY: [20, 0],
+    easing: 'easeOutExpo',
+    duration: 750,
+    offset: '-=500' // Starts this animation 500ms before the previous one ends
+  });
 
+  anime({
+    targets: '.tech-stack',
+    opacity: [0, 1],
+    translateY: [20, 0],
+    easing: 'easeOutExpo',
+    duration: 1250,
+    delay: anime.stagger(200) // Stagger the animation for each list item
+  });
 
+  anime({
+    targets: '.tech-icon-card',
+    opacity: [0, 1],
+    translateY: [20, 0],
+    easing: 'easeOutExpo',
+    duration: 1250,
+    delay: anime.stagger(200) // Stagger the animation for each list item
+  });
+  
+ 
 
 document.addEventListener('DOMContentLoaded', () => {
   const canvas = document.getElementById('night-sky-canvas');
